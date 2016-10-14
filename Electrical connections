@@ -1,0 +1,34 @@
+(Arduino NANO) Electrical connections:
+
+Send receive Bluetooth connection:
+  " int rxPin = 12; "
+  " int txPin = 11; "
+
+Servo link for steering:
+  " myServo.attach(7); "
+  
+Traction Motor Connection:
+  - H bridge
+    pin1A - pin2A - pin3A - pin4A - pin5A - pin6A - pin7A - pin8A 
+  --------------------------------------------------------------
+  ]                    L293DNE                                 |
+  --------------------------------------------------------------
+  pin1B - pin2B - pin3B - pin4B - pin5B - pin6B - pin7B - pin8B
+ 
+pin1A - 5V
+pin2A - D3
+pin3A - Motor -
+pin4A - 0V
+pin5A - 0V
+pin6A - Motor +
+pin7A - D2
+pin8A - free
+
+pin1B - d8
+pin2B - free
+pin3B - free
+pin4B - 0V
+pin5B - 0V
+pin6B - free
+pin7B - free
+pin8B - 9V (Battery) 
