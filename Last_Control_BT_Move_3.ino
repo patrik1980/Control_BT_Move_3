@@ -8,7 +8,7 @@ int txPin = 11;
 SoftwareSerial bluetooth(rxPin, txPin);
 String message; //string that stores the incoming message
 
-const int controlPin1 = 6;
+const int controlPin1 = 2;
 const int controlPin2 = 3;
 const int enablePin = 9;
 const int directionSwitchPin = 4;
